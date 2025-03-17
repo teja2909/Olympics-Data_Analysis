@@ -10,6 +10,8 @@ region_df = pd.read_csv("noc_regions.csv")
 
 df = preprocessor.preprocess(df, region_df)
 
+
+st.sidebar.markdown("© 2025 Vorsu Teja Vigneshwar")
 st.sidebar.title("Olympics Analysis")
 st.sidebar.image('https://stillmed.olympic.org/media/Images/OlympicOrg/IOC/The_Organisation/The-Olympic-Rings/Olympic_rings_TM_c_IOC_All_rights_reserved_1.jpg')
 
@@ -439,3 +441,5 @@ if user_menu == 'Athlete-wise Analysis':
 
     # Display the plot in Streamlit
     st.plotly_chart(fig, use_container_width=True)
+
+
